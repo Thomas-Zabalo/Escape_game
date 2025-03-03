@@ -5,6 +5,7 @@ Nous utilisons un système de tickets (**Issues GitHub**) pour structurer le tra
 
 1. **Création d'une branche**
    - À partir de `develop`, crée une nouvelle branche avec le nom :
+     
      ```sh
      git checkout develop
      git pull origin develop
