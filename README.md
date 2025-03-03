@@ -51,6 +51,7 @@ On reste sur un style de commit dans le format suivant :
  
    ```git
    feat(nomdelabranche): Description de ce que tu as fait (#n° ticket)
+   feat(gravité): Reduction de la gravité pour la salle n°2 (#13)
    ```
 
 Même si tu fait autre chose sur la meme branche garde cette structure
