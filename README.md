@@ -6,22 +6,19 @@ Nous utilisons un système de tickets (**Issues GitHub**) pour structurer le tra
 1. **Création d'une branche**
    - À partir de `develop`, crée une nouvelle branche avec le nom :
      
-     ```sh
-     git checkout develop
-     git pull origin develop
-     git checkout -b feature/nom_du_ticket
-     ```
+   ![Workflow Git](https://github.com/user-attachments/assets/9fc4a40f-03b9-4199-bd9e-9587a8b6650b)
+   
    - Exemple : `feature/mecanique-porte`
 
-2. **Développement**
+3. **Développement**
    - Implémente la fonctionnalité sur la branche créée.
    - Vérifie que tout fonctionne sans casser le projet.
 
-3. **Validation**
+4. **Validation**
    - Une fois terminé, passe le ticket en **"À valider"**.
    - Un autre membre teste la fonctionnalité sur sa machine.
 
-4. **Merge vers `develop`**
+5. **Merge vers `develop`**
    - Si tout fonctionne, fusionne la branche avec `develop`.
    - Supprime la branche une fois fusionnée.
    - Commandes :
@@ -33,7 +30,7 @@ Nous utilisons un système de tickets (**Issues GitHub**) pour structurer le tra
      git branch -d feature/nom_du_ticket
      ```
 
-5. **Finalisation vers `main`**
+6. **Finalisation vers `main`**
    - Une fois toutes les features complétées et testées, on fusionne `develop` dans `main`.
    - Commandes :
      ```sh
@@ -48,5 +45,5 @@ Nous utilisons un système de tickets (**Issues GitHub**) pour structurer le tra
 - 🔄 Développement en cours...
 
 ## 📸 Workflow Git
-![Workflow Git](https://github.com/user-attachments/assets/9fc4a40f-03b9-4199-bd9e-9587a8b6650b)
+
 ![Validation Process](https://github.com/user-attachments/assets/4793f2b8-7c97-4780-8de5-1b72be148831)
