@@ -1,9 +1,6 @@
-# 🏆 Escape Game - Projet Unity
+# Escape Game - Projet Unity
 
-## 📌 Description
-Escape Game est un projet Unity en vue à la première personne où les joueurs doivent résoudre des énigmes pour s'échapper d'un laboratoire secret. Le projet suit une organisation rigoureuse via GitHub pour une collaboration efficace.
-
-## 📂 Organisation du Travail
+## Organisation du Travail
 Nous utilisons un système de tickets (**Issues GitHub**) pour structurer le travail. Chaque membre s'attribue un ticket et suit le workflow suivant :
 
 1. **Création d'une branche**
