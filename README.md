@@ -24,13 +24,16 @@ Nous utilisons un système de tickets (**Issues GitHub**) pour structurer le tra
    - Si tout fonctionne, fusionne la branche avec `develop`.
    - Supprime la branche une fois fusionnée.
    - Commandes :
-     ```git
+
+      ```git
      git checkout develop
      git pull origin develop
      git merge feature/nom_du_ticket
      git push origin develop
      git branch -d feature/nom_du_ticket
      ```
+
+      A voir car vu qu'on bosse sur Unity Hub, le merge peut changer
      
 ## 📝 Au Niveau des Commits
 On reste sur un style de commit dans le format suivant :
@@ -43,13 +46,12 @@ Même si tu fait autre chose sur la meme branche garde cette structure
 6. **Finalisation vers `main`**
    - Une fois toutes les features complétées et testées, on fusionne `develop` dans `main`.
    - Commandes :
-     ```git
+
+      ```git
      git checkout main
      git pull origin main
      git merge develop
      git push origin main
      ```
 
-## 🎮 État Actuel
-- ✅ **First Person Controller** installé : déplacement fonctionnel.
-- 🔄 Développement en cours...
+    Pareil pour ici, on verra comment on gère ça plus tard
