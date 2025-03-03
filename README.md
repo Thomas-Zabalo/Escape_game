@@ -34,14 +34,6 @@ Nous utilisons un système de tickets (**Issues GitHub**) pour structurer le tra
      ```
 
       A voir car vu qu'on bosse sur Unity Hub, le merge peut changer
-     
-## 📝 Au Niveau des Commits
-On reste sur un style de commit dans le format suivant :
- 
-   ```git
-   feat(nomdelabranche): Description de ce que tu as fait (#n° ticket)
-   ```
-Même si tu fait autre chose sur la meme branche garde cette structure
 
 6. **Finalisation vers `main`**
    - Une fois toutes les features complétées et testées, on fusionne `develop` dans `main`.
@@ -54,4 +46,12 @@ Même si tu fait autre chose sur la meme branche garde cette structure
      git push origin main
      ```
 
-    Pareil pour ici, on verra comment on gère ça plus tard
+## 📝 Au Niveau des Commits
+On reste sur un style de commit dans le format suivant :
+ 
+   ```git
+   feat(nomdelabranche): Description de ce que tu as fait (#n° ticket)
+   ```
+
+Même si tu fait autre chose sur la meme branche garde cette structure
+Pareil pour ici, on verra comment on gère ça plus tard
