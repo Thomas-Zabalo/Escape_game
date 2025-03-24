@@ -1,58 +1,70 @@
-# Escape Game - Projet Unity
+# Escape Lab
 
-## Organisation du Travail
-Nous utilisons un système de tickets (**Issues GitHub**) pour structurer le travail. Chaque membre s'attribue un ticket et suit le workflow suivant :
+Escape Lab est un projet géré via le cloud de Unity, ce qui signifie que les modifications futures n'apparaîtront pas immédiatement sur GitHub.
 
-1. **Création d'une branche**
-   - À partir de `develop`, crée une nouvelle branche avec le nom :
+## Contexte du projet
+Escape Lab est un jeu d'évasion en vue subjective dans lequel le joueur incarne un scientifique piégé dans un laboratoire secret. Inspiré par notre passion pour les énigmes immersives et l'ambiance rétro-futuriste d'un laboratoire abandonné, ce jeu propose plusieurs scénarios permettant de découvrir des lois fondamentales de la physique et de la chimie.
 
-![Workflow Git](https://github.com/user-attachments/assets/9fc4a40f-03b9-4199-bd9e-9587a8b6650b)
-   
-   - Exemple : `feature/mecanique-porte`
+Le joueur pourra :
+- Expérimenter la chute libre en modulant la masse d'un objet.
+- Provoquer une réaction chimique contrôlée.
+- Activer un circuit électromagnétique en reconnectant divers composants.
 
-![Validation Process](https://github.com/user-attachments/assets/4793f2b8-7c97-4780-8de5-1b72be148831)
+L'ensemble de ces éléments contribue à créer une atmosphère pesante et mystérieuse, renforçant ainsi l'immersion du joueur.
 
-3. **Développement**
-   - Implémente la fonctionnalité sur la branche créée.
-   - Vérifie que tout fonctionne sans casser le projet.
+---
 
-4. **Validation**
-   - Une fois terminé, passe le ticket en **"À valider"**.
-   - Un autre membre teste la fonctionnalité sur sa machine.
+## Gameplay
+Le joueur, enfermé dans un laboratoire secret, doit explorer les lieux afin de collecter des indices, des clés et des outils indispensables à sa progression. Pour s'échapper, il devra résoudre des énigmes basées sur la physique, manipuler divers objets et déjouer des systèmes de sécurité tout en évitant des pièges ou alarmes qui se déclenchent progressivement.
 
-5. **Merge vers `develop`**
-   - Si tout fonctionne, fusionne la branche avec `develop`.
-   - Supprime la branche une fois fusionnée.
-   - Commandes :
+Chaque scénario permet de mettre en pratique des principes scientifiques, ajoutant une dimension éducative et immersive à l'expérience.
 
-      ```git
-     git checkout develop
-     git pull origin develop
-     git merge feature/nom_du_ticket
-     git push origin develop
-     git branch -d feature/nom_du_ticket
-     ```
+---
 
-      A voir car vu qu'on bosse sur Unity Hub, le merge peut changer
+## Interactions et immersion
+### Version simple
+- Déplacement avec le clavier (**ZQSD**), saut avec la **barre d'espace**.
+- Le curseur change de couleur ou de forme lorsqu'un objet interactif (clé, outil, indice) est à proximité.
+- Un objet détruit disparaît instantanément.
+- Des traces de sang apparaissent à l'écran lorsque le joueur subit des dégâts.
+- Des animations subtiles, accompagnées d'indicateurs contextuels et d'effets sonores, renforcent l'interactivité.
+- Des effets visuels, comme des lueurs ou des pulsations, signalent les objets interactifs.
 
-6. **Finalisation vers `main`**
-   - Une fois toutes les features complétées et testées, on fusionne `develop` dans `main`.
-   - Commandes :
+### Version avancée
+- Maintenir la **barre d'espace** permet d'effectuer un saut chargé pour atteindre des zones élevées.
+- Les objets interagissent de manière réaliste avec la physique, réagissant à leur masse et à la force appliquée.
+- Un son discret est joué à l'approche d'un objet interactif.
+- Lorsqu'un objet est détruit, il disparaît avec un effet de particules (fumée, éclats, étincelles).
+- En cas de blessure, la vitesse du joueur est temporairement réduite.
+- Certaines interactions environnementales (comme le déplacement d'étagères ou de caisses) permettent de révéler des indices cachés ou d'accéder à des passages secrets.
 
-      ```git
-     git checkout main
-     git pull origin main
-     git merge develop
-     git push origin main
-     ```
+---
 
-## 📝 Au Niveau des Commits
-On reste sur un style de commit dans le format suivant :
- 
-   ```git
-   feat(nomdelabranche): Description de ce que tu as fait (#n° ticket)
-   feat(gravité): Reduction de la gravité pour la salle n°2 (#13)
-   ```
+## Technologies utilisées
+- **Moteur de jeu** : Unity
+- **Langage** : C#
+- **Physique** : Unity Physics Engine
+- **Effets sonores** : FMOD / Wwise (tbc)
+- **Modélisation 3D** : Blender
 
-Même si tu fait autre chose sur la meme branche garde cette structure
-Pareil pour ici, on verra comment on gère ça plus tard
+---
+
+## Objectifs du projet
+- Créer une expérience immersive combinant évasion et apprentissage scientifique.
+- Développer un gameplay interactif basé sur des principes réalistes de physique et de chimie.
+- Offrir une ambiance rétro-futuriste avec des décors et effets visuels travaillés.
+
+---
+
+## Équipe
+- **Thomas Zabalo** - Developer / 3D Artist
+- **Clément Lorieau** - Developer 
+
+---
+
+## Statut du projet
+Projet en cours de développement.
+Prochaines étapes :
+- Intégration des premières mécaniques de gameplay.
+- Test des interactions physiques.
+- Conception des premiers niveaux.
